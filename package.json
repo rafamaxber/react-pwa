@@ -1,0 +1,33 @@
+{
+  "name": "front-entria",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "^2.9.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-helmet": "^5.2.0",
+    "react-scripts": "1.0.13",
+    "react-styleguidist": "^6.0.21",
+    "react-test-renderer": "^15.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start --env=.env.development.local",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c storybook",
+    "test:coverage": "npm test -- --coverage"
+  },
+  "devDependencies": {
+    "@storybook/cli": "^3.2.9",
+    "@storybook/react": "^3.2.8",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-react-app": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1"
+  }
+}
