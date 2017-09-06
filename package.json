@@ -12,22 +12,27 @@
     "react-test-renderer": "^15.6.1"
   },
   "scripts": {
-    "start": "react-scripts start --env=.env.development.local",
+    "start": "concurrently \" npm run dev\" \" npm run storybook\"",
+    "dev": "react-scripts start --env=.env.development.local",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "npm run lint && npm run test:tdd",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "test:coverage": "npm test -- --coverage"
+    "test:coverage": "npm test -- --coverage",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "test:tdd": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
     "@storybook/cli": "^3.2.9",
     "@storybook/react": "^3.2.8",
     "babel-eslint": "^7.2.3",
+    "concurrently": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint-plugin-react": "^7.0.1",
+    "jest-cli": "^21.0.1"
   }
 }
