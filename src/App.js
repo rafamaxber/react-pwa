@@ -1,46 +1,30 @@
 import React, { Component } from 'react'
-import Loadable from 'react-loadable';
+import LoadableWrapper from './components/Loading/Loadable';
 import { 
   BrowserRouter as Router,
   Route,
   Link } from 'react-router-dom';
 
-const HomePage = () => (
-  <div className="App">
-    Home Page
-  </div>
-);
+const Home = LoadableWrapper({
+  loader: () => import(/*webpackChunkName: "Home"*/'./containers/Home/Home.js'),
+});
 
-const Loading = () => (
-  <h1>CARREGANDO ESSA BAGAÇA</h1>
-)
+const About = LoadableWrapper({
+  loader: () => import(/*webpackChunkName: "About"*/'./containers/About/About.js'),
+});
 
-const Home = Loadable({
-  loader: () => import('./components/SearchBar/index'),
-  delay: 20000,
-  loading: Loading
-})
-
-const About = () => (
-  <div>
-    About Page
-  </div>
-);
-
-const Blog = () => (
-  <div>
-    Blog Page
-  </div>
-);
+const Blog = LoadableWrapper({
+  loader: () => import(/*webpackChunkName: "Blog"*/'./containers/Blog/Blog.js'),
+});
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Link to="/">Home</Link>    
-          <Link to="/about">About</Link>    
-          <Link to="/blog">Blog</Link>    
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/blog">Blog</Link>
           <hr />
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
