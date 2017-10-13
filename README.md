@@ -1,4 +1,4 @@
-## React template
+## React PWA test with
 
 - Storybook
 - Enzyme
@@ -8,4 +8,7 @@
 - Eslint
 - Structure
 - Concurrently
-- Styleguidist (falta configurar)
+- Styled components
+- React loadable
+- React Router v4
+- Styleguidist (not configured)
