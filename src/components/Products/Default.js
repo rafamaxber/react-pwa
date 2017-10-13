@@ -14,6 +14,7 @@ const ProductDefault = styled.div`
 const ProductImage = styled.div``;
 const Img = styled.img``;
 const ProductTitle = styled.div``;
+const ProductPrice = styled.div``;
 const Highlight = styled.span``;
 
 export default ({ title, highlight, imgSrc, description, priceTo, priceFrom, goTo }) => (
@@ -29,5 +30,8 @@ export default ({ title, highlight, imgSrc, description, priceTo, priceFrom, goT
         </Highlight>
         { title }
       </ProductTitle>}
+      <ProductPrice>
+      { priceTo }
+      </ProductPrice>
   </ProductDefault>
 );
