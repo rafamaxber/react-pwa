@@ -21,7 +21,7 @@
     "storybook": "start-storybook -p 9001 -c storybook",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "precommit": "npm run lint && npm test"
+    "precommit": "npm run lint && npm test -- --bail -- --findRelatedTests"
   },
   "devDependencies": {
     "@storybook/cli": "^3.2.9",

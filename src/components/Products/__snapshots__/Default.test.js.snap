@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Should match with snapshot 1`] = `
+<div
+  className="sc-bdVaJa emYuWr"
+>
+  <div
+    className="sc-bwzfXH uTxCW"
+  >
+    <img
+      className="sc-htpNat KtFsv"
+      src={undefined}
+    />
+  </div>
+  <div
+    className="sc-ifAKCX cFlEyZ"
+  />
+</div>
+`;
