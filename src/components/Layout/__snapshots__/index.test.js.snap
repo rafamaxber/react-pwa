@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Layout Should match with snapshot 1`] = `
-<main
-  className="sc-bdVaJa dVROXb"
-/>
+<div
+  className="sc-bxivhb eBNJKg"
+>
+  <header
+    className="sc-bdVaJa lbQKwt"
+  />
+  <main
+    className="sc-ifAKCX cTCzMl"
+  />
+</div>
 `;

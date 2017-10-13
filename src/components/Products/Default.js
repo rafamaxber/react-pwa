@@ -3,19 +3,26 @@ import styled from 'styled-components';
 
 const ProductDefault = styled.div`
   width: 100%;
+  max-width: 300px;
+  min-width: 140px;
   padding: 20px;
   text-align: center;
   background-color: #fff;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 `;
 const ProductImage = styled.div``;
-const Img = styled.img``;
-const ProductTitle = styled.div``;
+const Img = styled.img`
+  width: 100%;
+`;
+const ProductTitle = styled.div`
+  font-size: 14px;
+`;
+const Highlight = styled.span`
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+`;
 const ProductPrice = styled.div``;
-const Highlight = styled.span``;
 
 export default ({ title, highlight, imgSrc, description, priceTo, priceFrom, goTo }) => (
   <ProductDefault>
@@ -25,11 +32,12 @@ export default ({ title, highlight, imgSrc, description, priceTo, priceFrom, goT
     {
       highlight && 
       <ProductTitle>
-        <Highlight>
-          { highlight }
+        <Highlight className="highlight">
+          { highlight }&nbsp; 
         </Highlight>
         { title }
-      </ProductTitle>}
+      </ProductTitle>
+    }
       <ProductPrice>
       { priceTo }
       </ProductPrice>

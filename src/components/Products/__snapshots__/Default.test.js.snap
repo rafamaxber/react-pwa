@@ -2,18 +2,18 @@
 
 exports[`Product Should match with snapshot 1`] = `
 <div
-  className="sc-bdVaJa emYuWr"
+  className="sc-bdVaJa dCwRqi"
 >
   <div
     className="sc-bwzfXH uTxCW"
   >
     <img
-      className="sc-htpNat KtFsv"
+      className="sc-htpNat daVAfG"
       src={undefined}
     />
   </div>
   <div
-    className="sc-ifAKCX cFlEyZ"
+    className="sc-EHOje jvzENE"
   />
 </div>
 `;
