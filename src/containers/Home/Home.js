@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
-const HomePage = () => (
-  <div className="App">
-    Home Page
-  </div>
-);
-
-export default HomePage;
+export default class HomePage extends PureComponent {
+  
+  render() {
+    return (
+      <div>
+        Aqui jas a home do site
+      </div>
+    );
+  }
+}

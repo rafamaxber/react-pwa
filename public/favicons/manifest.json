@@ -1,0 +1,22 @@
+{
+    "name": "FotoRegistro - Revelação de Fotos, Fotolivros e Fotopresentes",
+    "short_name": "FotoRegistro",
+    "description": "Registre suas memórias de maneira criativa e inovadora através dos Fotolivros, Fotopresentes, revelação de fotos e muito mais. Confira!",
+    "lang": "pt-br",
+    "icons": [
+        {
+            "src": "/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ed948b",
+    "background_color": "#f9d0d1",
+    "display": "standalone",
+    "start_url": "/?utm_source=homescreen"
+}
